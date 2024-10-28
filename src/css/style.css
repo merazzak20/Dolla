@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+/** NAVIGATION SECTION START **/
+#header .navbar {
+  background: #131313;
+  z-index: 1000; }
+
+#header .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+#header .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem; }
+
+#header .nav-link:hover {
+  color: #00BF85; }
+
+#header .btn {
+  background: #00BF85;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px; }
+
+/** NAVIGATION SECTION END **/
+/** HOME-VIDEO SECTION START **/
+#home-video .mid {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+#home-video .mid video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#home-video .home-info {
+  position: relative; }
+  #home-video .home-info .btn {
+    background: #00BF85;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px; }
+  #home-video .home-info .btn:hover {
+    background: #fff; }
+
+/** HOME-VIDEO SECTION END **/
+/** ABOUT SECTION START **/
+#about {
+  background: #000; }
+  #about h6 {
+    color: #00BF85; }
+  #about h2 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 2rem; }
+  #about .btn {
+    background: #00BF85;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px; }
+
+/** ABOUT SECTION END **/
+/** DISCOVER SECTION START **/
+#discover h6 {
+  color: #00BF85; }
+
+#discover h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  text-transform: capitalize; }
+
+#discover .btn {
+  background: #000;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px; }
+
+/** DISCOVER SECTION END **/
+/** SERVICE SECTION START **/
+#service {
+  background: #000; }
+  #service img {
+    width: 300px; }
+  #service .card {
+    transition: all 0.5s ease-in; }
+  #service .card:hover {
+    transform: translateY(-15px);
+    box-shadow: #faf7f7; }
+
+/** SERVICE SECTION END **/
+/** JOIN SECTION START **/
+#join h6 {
+  color: #00BF85; }
+
+#join h2 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 2rem; }
+
+#join .btn {
+  background: #000;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px; }
+
+/** JOIN SECTION END **/
+/** FOOTER SECTION START **/
+#footer {
+  background: #00BF85; }
+
+/** MEDIA QUARIES START **/
+@media (max-width: 767px) {
+  #home-video .mid {
+    height: 70vh; }
+  #home-video .mid video {
+    transform: translate(-50%, -70%); }
+  #home-video h2 {
+    font-weight: 500 !important; }
+  #about img {
+    text-align: center; }
+  #service .card {
+    margin-bottom: 15px; } }
